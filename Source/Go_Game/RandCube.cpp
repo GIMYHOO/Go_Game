@@ -26,7 +26,7 @@ ARandCube::ARandCube()
 	Cube_Third->SetupAttachment(Arrow);
 
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> Cube(TEXT("StaticMesh'/Game/03_Mesh+Materials/Meshes/1M_Cube.1M_Cube'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> Cube(TEXT("StaticMesh'/Game/Geometry/Meshes/1M_Cube.1M_Cube'"));
 	if (Cube.Succeeded())
 	{
 		Cube_First->SetStaticMesh(Cube.Object);
